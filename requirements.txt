@@ -1,4 +1,7 @@
 langchain
 langchain-openai
+langchain-community
 pydantic
 python-dotenv
+pypdf
+beautifulsoup4
