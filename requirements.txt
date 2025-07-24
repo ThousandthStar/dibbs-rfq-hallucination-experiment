@@ -1,7 +1,10 @@
 langchain
 langchain-openai
 langchain-community
+langchain-unstructured
+langchain-anthropic
 pydantic
 python-dotenv
 pypdf
 beautifulsoup4
+pdf2image
