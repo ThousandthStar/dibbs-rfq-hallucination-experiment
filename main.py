@@ -31,8 +31,8 @@ if __name__ == "__main__":
     folder_path = "./pdfs"
 
     models = [
-        init_chat_model("gpt-4o-mini", model_provider="openai"),
-        ChatAnthropic(model="claude-3-5-sonnet-20240620"),
+        init_chat_model("gpt-4o-mini", model_provider="openai").with_structured_output(output.Output),
+        ChatAnthropic(model="claude-3-5-sonnet-20240620").with_structured_output(output.Output),
     ]
 
     model_names = [
@@ -49,7 +49,6 @@ if __name__ == "__main__":
             dir = data_loader.pdf_to_image(f"./pdfs/{path}", "./img")
             message = data_loader.load_png_messages(dir, prompt)
 
-            llm = llm.with_structured_output(output.Output)
             image_response = llm.invoke([message])
             print("Image file response:\n", image_response, '\n')
 
