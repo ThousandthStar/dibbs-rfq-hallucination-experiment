@@ -1,4 +1,4 @@
-# SAM.gov hallucination experiment
+# DIBBS RFQ hallucination experiment
 
 This is an experiment to determine the rate of hallucinations of LLMs on contract data, depending on the foundational model and the way the data is passed to the LLM.
 
